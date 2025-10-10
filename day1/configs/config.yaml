@@ -1,0 +1,16 @@
+# 配置文件
+
+server:
+  port: 8080
+
+# 路由配置
+routes:
+  # 路由service-a
+  - id: service-a
+    path: /service-a
+    target: http://localhost:8081
+
+  # 路由service-b
+  - id: service-b
+    path: /service-b
+    target: http://localhost:8082
