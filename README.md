@@ -1,6 +1,6 @@
 # 30daysGateway
 > 本项目将所有功能划分到30天开发，带你30天用Golang开发一个微服务网关（附详细技术文档与代码解析） 
-
+**声明:由于star人数较少，加上作者个人时间有限，技术文档可能会简写，如有疑问可联系作者QQ:2329988157**
 **注意：每个技术文档都放在Day的项目中。**  
 [个人博客地址](https://leonincs.github.io/)  
 [CSDN地址](https://blog.csdn.net/Xcq20230729?type=blog)
