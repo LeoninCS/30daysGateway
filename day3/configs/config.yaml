@@ -1,0 +1,29 @@
+# 配置文件
+
+server:
+  port: 8080
+
+# 路由配置
+routes:
+  # 路由service-a
+  - id: service-a
+    path: /service-a
+    # 负载均衡策略(round, random, leastConn,weight)
+    strategy: random
+    targets: 
+          - url: http://localhost:8081
+            weight: 1
+          - url: http://localhost:8082
+            weight: 3
+  # 路由service-b
+  - id: service-b
+    path: /service-b 
+    # 负载均衡策略(roundRobin, random, leastConn,weight)
+    strategy: weight 
+    targets: 
+          - url: http://localhost:8083
+            weight: 3
+          - url: http://localhost:8084
+            weight: 2
+          - url: http://localhost:8085
+            weight: 1
